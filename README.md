@@ -35,7 +35,7 @@
     - [Introduction](#introduction)
     - [Control tags](#control-tags)
     - [Naming menu items](#naming-menu-items)
-  - [**Naming Data Access Objects**](#naming-data-access-objects)
+  - [Naming Data Access Objects](#naming-data-access-objects)
     - [ADO](#ado)
     - [ADO objects](#ado-objects)
     - [MS Access objects](#ms-access-objects)
@@ -558,19 +558,21 @@ Remember the following points:
 Example:
 
 ```vba
-Dim strLookUp as String 'Accepts value from user to search for
+Dim strLookUp as String    ' Accepts value from user to search for
 ```
 
 - Comments for individual lines appear above, or of the code to which
   they refer.
 - The functional overview comment of a procedure may be indented one
   space to aid readability.
+- You can also add comments to your code with the `Rem` keyword.
+  However, the `'` symbol are easier to use and require less space and memory.
 
 Example:
 
 ```vba
 Public Sub DeleteCustomer(ByVal argintID As Long)
-    'Removes customer from Database
+    ' Removes customer from Database
     cnVideo.Execute "DELETE FROM Customer WHERE CustomerID=" & argintID
 End Sub
 ```
